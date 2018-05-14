@@ -38,6 +38,7 @@ gem 'devise'
 gem 'bootstrap-sass', '~> 3.3.7'
 gem 'jquery-rails'
 gem "font-awesome-rails"
+gem 'rails_12factor'
 
 
 group :development, :test do
