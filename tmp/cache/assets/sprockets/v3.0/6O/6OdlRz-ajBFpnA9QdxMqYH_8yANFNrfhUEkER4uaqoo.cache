@@ -1,0 +1,27 @@
+{:uriI"file://app/assets/stylesheets/font-awesome/bower.json?type=application/json&id=9152e7a003649b9de16c924752246b4d57f79baef1c764587f5177cfbdffc824:ET:load_pathI"app/assets/stylesheets;T:filenameI"3app/assets/stylesheets/font-awesome/bower.json;T:	nameI"font-awesome/bower;T:logical_pathI"font-awesome/bower.json;T:content_typeI"application/json;T:sourceI"“{
+  "name": "font-awesome",
+  "description": "Font Awesome",
+  "keywords": [],
+  "homepage": "http://fontawesome.io",
+  "dependencies": {},
+  "devDependencies": {},
+  "license": ["OFL-1.1", "MIT", "CC-BY-3.0"],
+  "main": [
+    "less/font-awesome.less",
+    "scss/font-awesome.scss"
+  ],
+  "ignore": [
+    "*/.*",
+    "*.json",
+    "src",
+    "*.yml",
+    "Gemfile",
+    "Gemfile.lock",
+    "*.md"
+  ]
+}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"Afile-digest://app/assets/stylesheets/font-awesome/bower.json;TTF:charsetI"
+utf-8;F:digest"%HÜl‘­’ÓÂdwz2«KK®7Ùÿº·àj}4{äœ:lengthi“:dependencies_digest"%2YQ­ª3:|l…×ªìò9òzˆB¢2ã‰¬ÔÎZ:idI"E9152e7a003649b9de16c924752246b4d57f79baef1c764587f5177cfbdffc824;F:
+mtimel+Oú¼Z

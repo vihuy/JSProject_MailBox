@@ -1,0 +1,74 @@
+<div id="wrapper">
+
+        <!-- Sidebar -->
+        <%= render 'shared/side_bar' %>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th>
+                              <i class="glyphicon glyphicon-star"> </i>
+                            </th>
+                            <th>Subject</th>
+                            <th>Correspondent</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <% @send_boxes.each do |send_box| %>
+                            <tr class="record">
+                              <td>
+                                <i class="glyphicon glyphicon-star-empty"></i>
+                              </td>
+                              <td> <%= send_box.subject %> </td>
+                              <td> <%=send_box.content %> </td>
+                              <td> john@example.com</td>
+                              <td> <%= send_box.status %></td>
+                            </tr>
+                          <% end %>
+                        </tbody>
+                      </table>
+                    </div>
+                    <!-- col-lg-12 -->
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+<script>
+$(function(){
+  $( "tr.record" ).each(function(eq,el) {
+    el = $(el)
+    if(typeof(el.attr('id')) === "undefined"){
+     el.attr("id","row" + eq)
+    }
+
+    el.on("click",function(){
+      if(el.hasClass('active')){
+      }
+      else{
+        $('tr.record').removeClass('active')
+        el.addClass("active")
+      }
+    })
+
+
+  });
+});
+</script>
+
+
+
+
+
+
