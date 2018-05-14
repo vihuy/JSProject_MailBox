@@ -30,7 +30,7 @@
                               </td>
                               <td> <%= inbox.subject %> </td>
                               <td> <%=inbox.content %> </td>
-                              <td> john@example.com</td>
+                              <td> <%=inbox.user.email %></td>
                               <td>
                                 <%= inbox.is_readed ? "Readed" : "Unreaded" %>
 

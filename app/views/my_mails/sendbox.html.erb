@@ -29,7 +29,7 @@
                               </td>
                               <td> <%= send_box.subject %> </td>
                               <td> <%=send_box.content %> </td>
-                              <td> john@example.com</td>
+                              <td> <%=send_box.receiver.email %></td>
                               <td> <%= send_box.status %></td>
                             </tr>
                           <% end %>
