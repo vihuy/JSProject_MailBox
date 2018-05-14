@@ -28,11 +28,11 @@ class MyMailsController < ApplicationController
   end
 
   def read
-    @read = MyMail.where(category_id:1,is_readed:true,user_id:current_user.id)
+    @read = MyMail.where(category_id:2,is_readed:true,object_id:current_user.id)
   end
 
   def unread
-     @unread = MyMail.where(category_id:1, is_readed:false,user_id:current_user.id)
+    @unread = MyMail.where(category_id:2, is_readed:false,object_id:current_user.id)
   end
 
 end
