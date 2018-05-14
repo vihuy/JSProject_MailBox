@@ -5,22 +5,22 @@ class MyMailsController < ApplicationController
   end
 
   def inbox
-    @inboxes = Mail.where(category_id:1)
+    @inboxes = MyMail.where(category_id:1)
   end
 
   def sendbox
-    @send_boxes = Mail.where(category_id:2)
+    @send_boxes = MyMail.where(category_id:2)
   end
 
   def draft
-    @drafts = Mail.where(category_id:3)
+    @drafts = MyMail.where(category_id:3)
   end
 
   def read
-    @read = Mail.where(category_id:1, is_readed:true)
+    @read = MyMail.where(category_id:1, is_readed:true)
   end
 
   def unread
-     @unread = Mail.where(category_id:1, is_readed:false)
+     @unread = MyMail.where(category_id:1, is_readed:false)
   end
 end

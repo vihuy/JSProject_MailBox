@@ -1,0 +1,58 @@
+<div id="wrapper">
+
+        <!-- Sidebar -->
+        <%= render 'shared/side_bar' %>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                      <%= render 'navbar_inbox' %>
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th>
+                              <i class="glyphicon glyphicon-star"> </i>
+                            </th>
+                            <th>Subject</th>
+                            <th>Correspondent</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <% @inboxes.each do |inbox| %>
+                            <tr class="record">
+                              <td>
+                                <i class="glyphicon glyphicon-star-empty"></i>
+                              </td>
+                              <td> <%= inbox.subject %> </td>
+                              <td> <%=inbox.content %> </td>
+                              <td> john@example.com</td>
+                              <td>
+                                <%= inbox.is_readed ? "Readed" : "Unreaded" %>
+
+                                </td>
+                            </tr>
+                          <% end %>
+                        </tbody>
+                      </table>
+                    </div>
+                    <!-- col-lg-12 -->
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+
+
+
+
+
+
+

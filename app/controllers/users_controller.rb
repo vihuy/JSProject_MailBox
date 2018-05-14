@@ -3,7 +3,7 @@ class UsersController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @mails = Mail.all
+    @mails = MyMail.all
   end
 
 end

@@ -5,17 +5,23 @@
               vitht@nustechnology.com
           </a>
       </li>
-      <li class="glyphicon glyphicon-envelope">
+      <li>
+          <%= link_to "Log out",destroy_user_session_path, method: :delete %>
+
       </li>
       <li>
-        <%= link_to "Inbox",inbox_mails_path %>
+        <%= link_to "Compose",new_my_mail_path %>
         <!--   <a href="#">Inbox </a> -->
       </li>
       <li>
-        <%= link_to "Send Box",sendbox_mails_path %>
+        <%= link_to "Inbox",inbox_my_mails_path %>
+        <!--   <a href="#">Inbox </a> -->
       </li>
       <li>
-        <%= link_to "Drafts",draft_mails_path %>
+        <%= link_to "Send Box",sendbox_my_mails_path %>
+      </li>
+      <li>
+        <%= link_to "Drafts",draft_my_mails_path %>
       </li>
   </ul>
 </div>
