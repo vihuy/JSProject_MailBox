@@ -1,4 +1,4 @@
-class MailsController < ApplicationController
+class MyMailsController < ApplicationController
   layout 'user'
   def index
 
